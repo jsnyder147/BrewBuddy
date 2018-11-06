@@ -50,7 +50,7 @@
                 <EditText
                     android:id="@+id/styleEditText"
                     style="@style/TextView.EditText"
-                    android:inputType="text"/>
+                    android:inputType="text"/> 
 
                 <!-- Type -->
                 <TextView
