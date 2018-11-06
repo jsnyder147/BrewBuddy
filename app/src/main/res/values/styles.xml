@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base Text View Style -->
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Yeast Viewer -->
+    <style name="TextView.Yeast">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Text View List Style -->
+    <style name="TextView.List">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- TextView Title Style -->
+    <style name="TextView.Title">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Title.New">
+        <item name="android:background">#5a595b</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="TextView.EditText">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:ems">8</item>
+    </style>
+
+
+    <!-- HelpActivity Paragraph Style -->
+    <style name="TextView.Help">
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!-- Subtitle Style -->
+    <style name="TextView.SubTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Smaller Width of List Style -->
+    <style name="TextView.List.Smaller">
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <!-- Smaller Text of EditTExt Style -->
+    <style name="TextView.EditText.Smaller">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Dialog Theme
+    <style name="DialogTheme" parent="android:them." /> -->
+
+
+</resources>

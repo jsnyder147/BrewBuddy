@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:BrewBuddy="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_new_recipe"
+        android:title="@string/new_label"
+        android:icon="@drawable/ic_menu_add"
+        BrewBuddy:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_help"
+        android:title="@string/help"
+        android:icon="@drawable/ic_menu_help"
+        />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/settings_label"
+        android:icon="@drawable/ic_settings"/>
+
+
+</menu>

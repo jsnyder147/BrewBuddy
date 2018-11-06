@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">BrewBuddy</string>
+    <string name="recipes_title">Recipes</string>
+    <string name="settings_label">Settings</string>
+    <string name="new_label">New Recipe</string>
+    <string name="new_recipe_title">New Recipe</string>
+    <string name="batch_name_label">Name:</string>
+    <string name="style_label">Style:</string>
+    <string name="type_label">Type:</string>
+    <string name="IBU_label">IBU:</string>
+    <string name="SRM_label">SRM:</string>
+    <string name="ABV_label">ABV:</string>
+    <string name="yeast_label">Yeast:</string>
+    <string name="hops_label">Hops:</string>
+    <string name="malt_label">Malt:</string>
+    <string name="save_label">Save Recipe</string>
+    <string name="og_label">Estimated OG (Standard):</string>
+    <string name="fg_label">Estimated FG (Standard):</string>
+    <string name="og_plato_label">Estimated OG (Plato):</string>
+    <string name="fg_plato_label">Estimated FG (Plato):</string>
+    <string name="brewer_name_label">Brewer Name</string>
+    <string name="units_label">System of Measurement</string>
+    <string name="gravity_units_label">Gravity Units</string>
+    <string name="standard">Standard</string>
+    <string name="metric">Metric</string>
+    <string name="plato">Plato</string>
+    <string name="help">Help</string>
+    <string name="blank"> </string>
+    <string name="notes">Brew Day Notes</string>
+    <string name="general_info_title">General Information</string>
+    <string name="IBU_SRM_ABV_title">IBU, SRM, Gravity</string>
+    <string name="ingredients_title">Ingredients</string>
+    <string name="help_description_one">
+        This application is intended to be used by home brewers as a tool to build recipes,
+        record information, and save information from the brew day. It combines the features
+        of a recipe builder and a brew log.
+    </string>
+    <string name="help_description_two">
+        The Preferences for this app include areas to set a brewer name and gravity measurement
+        units. The brewer name will be used in every recipe as the author of the recipe.
+        The gravity units can be either Standard Gravity or Plato and will affect how ABV is
+        calculated and how gravity readings are displayed.
+    </string>
+    <string name="brewer_name_summary">
+        Uses the name of the brewer as author for recipes.
+    </string>
+    <string name="system_of_measurement_summary">
+        Sets the system of measurement for displaying measurements.
+    </string>
+    <string-array name="systems_keys">
+        <item >Standard</item>
+        <item >Metric</item>
+    </string-array>
+    <string-array name="systems_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="value_default">0</string>
+    <string name="gravity_units_summary">
+        Sets the measurement for gravity units used to display gravity measurements.
+    </string>
+    <string-array name="gravity_keys">
+        <item>Standard</item>
+        <item>Plato</item>
+    </string-array>
+    <string-array name="gravity_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

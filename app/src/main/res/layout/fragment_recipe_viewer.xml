@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeViewerActivity">
+
+    <!-- Recipe Name -->
+    <TextView
+        android:id="@+id/recipeName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/TextView.Title"/>
+
+    <!-- Brewer Name -->
+    <TextView
+        android:id="@+id/brewerName"
+        android:layout_below="@+id/recipeName"
+        android:layout_centerHorizontal="true"
+        style="@style/TextView.SubTitle"/>
+
+    <LinearLayout
+        android:id="@+id/styleTypeOrganizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brewerName"
+        android:layout_marginTop ="7dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <!-- Style and Type -->
+        <TextView
+            android:id="@+id/recipeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/recipeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- IBU, SRM, and ABV -->
+    <LinearLayout
+        android:id="@+id/organizerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/styleTypeOrganizer"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <!-- IBU -->
+        <TextView
+            android:id="@+id/IBULabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="3dp"
+            android:textSize="18sp"
+            android:text="@string/IBU_label"/>
+        <!-- style="@style/TextView.List" -->
+
+        <TextView
+            android:id="@+id/IBU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="3dp"
+            android:textSize="18sp"
+            android:text="@string/blank"/>
+        <!--style="@style/TextView.List.Smaller" -->
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <!-- SRM -->
+        <TextView
+            android:id="@+id/SRMLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="3dp"
+            android:textSize="18sp"
+            android:padding="7dp"
+            android:text="@string/SRM_label" />
+
+        <TextView
+            android:id="@+id/SRM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="3dp"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <!--ABV -->
+        <TextView
+            android:id="@+id/ABVLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="3dp"
+            android:textSize="18sp"
+            android:padding="7dp"
+            android:text="@string/ABV_label" />
+
+        <TextView
+            android:id="@+id/ABV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="3dp"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- Yeast -->
+    <TextView
+        android:id="@+id/yeastLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/organizerLayout"
+        android:text="@string/yeast_label"
+        style="@style/TextView.SubTitle"/>
+
+    <TextView
+        android:id="@+id/yeastTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/yeastLabel"
+        android:textSize="15sp"/>
+
+    <!-- Hops -->
+    <TextView
+        android:id="@+id/hopsLabel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/yeastTextView"
+        android:text="@string/hops_label"
+        style="@style/TextView.SubTitle"/>
+
+    <ListView
+        android:id="@+id/hopsDisplayListView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:background="?attr/colorButtonNormal"
+        android:layout_below="@+id/hopsLabel"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- Malt -->
+    <TextView
+        android:id="@+id/maltLabel"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/hopsDisplayListView"
+        android:layout_below="@+id/yeastTextView"
+        android:text="@string/malt_label"
+        style="@style/TextView.SubTitle"/>
+
+    <ListView
+        android:id="@+id/maltsDisplayListView"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:background="?attr/colorButtonNormal"
+        android:layout_below="@+id/hopsLabel"
+        android:layout_toRightOf="@+id/hopsDisplayListView"/>
+
+
+    <!-- Notes -->
+    <TextView
+        android:id="@+id/notesLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/hopsDisplayListView"
+        android:text="@string/notes"
+        style="@style/TextView.SubTitle"/>
+
+    <EditText
+        android:id="@+id/notesEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/notesLabel"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_textbox"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4"/>
+
+
+</RelativeLayout>

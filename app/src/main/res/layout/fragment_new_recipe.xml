@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRecipeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/general_info_title"
+                    android:text="@string/general_info_title"
+                    android:gravity="center"
+                    style="@style/TextView.Title.New"
+                    android:layout_width="match_parent"/>
+
+
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/batchNameLabel"
+                    android:text="@string/batch_name_label"
+                    style="@style/TextView.List"/>
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="text"/>
+
+
+                <!-- Style -->
+                <TextView
+                    android:id="@+id/styleLabel"
+                    android:text="@string/style_label"
+                    style="@style/TextView.List"/>
+
+                <EditText
+                    android:id="@+id/styleEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="text"/>
+
+                <!-- Type -->
+                <TextView
+                    android:id="@+id/typeLabel"
+                    android:text="@string/type_label"
+                    style="@style/TextView.List"/>
+
+                <EditText
+                    android:id="@+id/typeEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/IBU_SRM_ABV_title"
+                    android:text="@string/IBU_SRM_ABV_title"
+                    style="@style/TextView.Title.New"
+                    android:gravity="center"
+                    android:layout_width="match_parent" />
+
+                <!-- IBU -->
+                <TextView
+                    android:id="@+id/IBULabel"
+                    android:text="@string/IBU_label"
+                    style="@style/TextView.List"/>
+
+                <EditText
+                    android:id="@+id/IBUEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="number"/>
+
+                <!-- SRM -->
+                <TextView
+                    android:id="@+id/SRMLabel"
+                    android:text="@string/SRM_label"
+                    style="@style/TextView.List" />
+
+                <EditText
+                    android:id="@+id/SRMEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="number"/>
+
+                <!-- ABV
+                <TextView
+                    android:id="@+id/ABVLabel"
+                    android:text="@string/ABV_label"
+                    style="@style/TextView.List"/>
+
+                <EditText
+                    android:id="@+id/ABVEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="numberDecimal" /> -->
+
+                <!-- Estimated OG -->
+                <TextView
+                    android:id="@+id/OGLabel"
+                    android:text="@string/og_label"
+                    style="@style/TextView.List"/>
+
+                <EditText
+                    android:id="@+id/OGEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="numberDecimal"/>
+
+                <!-- Estimated FG -->
+                <TextView
+                    android:id="@+id/FGLabel"
+                    android:text="@string/fg_label"
+                    style="@style/TextView.List"/>
+
+                <EditText
+                    android:id="@+id/FGEditText"
+                    style="@style/TextView.EditText"
+                    android:inputType="numberDecimal"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/ingredients_title"
+                    android:text="@string/ingredients_title"
+                    style="@style/TextView.Title.New"
+                    android:gravity="center"
+                    android:layout_width="match_parent" />
+
+                <!-- Yeast -->
+                <TextView
+                    android:id="@+id/yeastLabel"
+                    android:text="@string/yeast_label"
+                    style="@style/TextView.List"/>
+
+
+
+                <EditText
+                    android:id="@+id/yeastTextView"
+                    style="@style/TextView.EditText"
+                    android:inputType="text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!-- Hops -->
+                    <TextView
+                        android:id="@+id/hopsLabel"
+                        style="@style/TextView.List"
+                        android:text="@string/hops_label" />
+
+                    <ImageButton
+                        android:id="@+id/addHopButton"
+                        android:paddingLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_menu_add" />
+
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/hopsListView"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_height="100dp"
+                    android:paddingTop="5dp"/>
+
+                <!-- Malt -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <!-- Malts -->
+                    <TextView
+                        android:id="@+id/maltLabel"
+                        android:text="@string/malt_label"
+                        style="@style/TextView.List"/>
+
+                    <ImageButton
+                        android:id="@+id/addMaltButton"
+                        android:paddingLeft="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_menu_add" />
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/maltsListView"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_height="100dp"
+                    android:paddingTop="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/save_label"
+                    android:textColor="?attr/colorPrimaryDark" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
